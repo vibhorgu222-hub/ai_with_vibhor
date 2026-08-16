@@ -1,0 +1,124 @@
+.sidebar {
+  min-height: 100vh;
+  width: 68px;
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: width 0.22s ease;
+  flex-shrink: 0;
+}
+
+.sidebar.extended {
+  width: 260px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: background 0.15s;
+}
+
+.icon-btn:hover {
+  background: var(--panel-hover);
+  color: var(--text);
+}
+
+.new-chat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--panel-hover);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.new-chat:hover {
+  border-color: var(--accent-1);
+}
+
+.recent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 8px;
+  overflow-y: auto;
+  max-height: calc(100vh - 220px);
+}
+
+.recent-title {
+  font-size: 12px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 8px 10px 4px;
+}
+
+.recent-entry {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  padding: 9px 10px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.recent-entry:hover {
+  background: var(--panel-hover);
+  color: var(--text);
+}
+
+.recent-entry p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bottom-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.bottom-item:hover {
+  background: var(--panel-hover);
+  color: var(--text);
+}
